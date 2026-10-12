@@ -1,0 +1,84 @@
+arff
+```
+% weather.nominal.arff
+
+@relation weather
+
+@attribute outlook {sunny,overcast,rainy}
+@attribute temperature {hot,mild,cool}
+@attribute humidity {high,normal}
+@attribute windy {TRUE,FALSE}
+@attribute play {yes,no}
+
+@data
+sunny,hot,high,FALSE,no
+sunny,hot,high,TRUE,no
+overcast,hot,high,FALSE,yes
+rainy,mild,high,FALSE,yes
+rainy,cool,normal,FALSE,yes
+rainy,cool,normal,TRUE,no
+overcast,cool,normal,TRUE,yes
+sunny,mild,high,FALSE,no
+sunny,cool,normal,FALSE,yes
+rainy,mild,normal,FALSE,yes
+sunny,mild,normal,TRUE,yes
+overcast,mild,high,TRUE,yes
+overcast,hot,normal,FALSE,yes
+rainy,mild,high,TRUE,no
+```
+
+arff
+```
+% iris.arff
+% Complete dataset: 150 instances, 5 attributes.
+% Load the built-in iris.arff file supplied with WEKA.
+
+@relation iris
+
+@attribute sepallength numeric
+@attribute sepalwidth numeric
+@attribute petallength numeric
+@attribute petalwidth numeric
+@attribute class {Iris-setosa,Iris-versicolor,Iris-virginica}
+
+@data
+5.1,3.5,1.4,0.2,Iris-setosa
+4.9,3.0,1.4,0.2,Iris-setosa
+4.7,3.2,1.3,0.2,Iris-setosa
+4.6,3.1,1.5,0.2,Iris-setosa
+5.0,3.6,1.4,0.2,Iris-setosa
+5.4,3.9,1.7,0.4,Iris-setosa
+4.6,3.4,1.4,0.3,Iris-setosa
+5.0,3.4,1.5,0.2,Iris-setosa
+5.4,3.7,1.5,0.2,Iris-setosa
+4.9,3.1,1.5,0.1,Iris-setosa
+```
+
+text
+```
+Expected Output
+
+Dataset: weather.nominal
+Instances: 14
+Attributes: 5
+Class Attribute: play
+
+Class Distribution:
+yes = 9
+no  = 5
+
+Dataset: iris
+Instances: 150
+Attributes: 5
+Class Attribute: class
+
+Class Distribution:
+Iris-setosa     = 50
+Iris-versicolor = 50
+Iris-virginica  = 50
+
+Result:
+WEKA was explored to understand ARFF files,
+dataset attributes, class distributions,
+classification, clustering, and visualization.
+```
